@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>
+    
+</script>
+<body>
+
+    <div class="form-container">
+        <div class="form-toggle">
+            <button id="login-btn" class="active-toggle" onclick="toggleForm('login')">Log In</button>
+            <button id="register-btn" onclick="toggleForm('register')">Register</button>
+        </div>
+
+        <form id="login-form" class="form-box">
+            <h2>Welcome Back</h2>
+            <div class="input-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="form-actions">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+
+        <form id="register-form" class="form-box hidden">
+            <h2>Create Account</h2>
+            <div class="input-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <div class="form-actions">
+                <label><input type="checkbox" required> I agree to the terms & conditions</label>
+            </div>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+
+    <script>
+        // function toggleForm(formType) {
+        //     const loginForm = document.getElementById('login-form');
+        //     const registerForm = document.getElementById('register-form');
+        //     const loginBtn = document.getElementById('login-btn');
+        //     const registerBtn = document.getElementById('register-btn');
+
+        //     if (formType === 'login') {
+        //         loginForm.classList.remove('hidden');
+        //         registerForm.classList.add('hidden');
+        //         loginBtn.classList.add('active-toggle');
+        //         registerBtn.classList.remove('active-toggle');
+        //     } else {
+        //         loginForm.classList.add('hidden');
+        //         registerForm.classList.remove('hidden');
+        //         loginBtn.classList.remove('active-toggle');
+        //         registerBtn.classList.add('active-toggle');
+        //     }
+        // }
+    </script>
+</body>
+</html>
