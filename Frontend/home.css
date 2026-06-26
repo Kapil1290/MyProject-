@@ -11,16 +11,16 @@
 }
 
 .nav{
- height: 65px;
+ height: 67px;
  width: 100vw;   
- border: 1px solid rgb(49, 68, 145);
+  backdrop-filter: blur(8px);
  display: flex;
  flex-direction: row;
-
+border-bottom: 2px solid gray;
 align-items: center;
 justify-content: center;
 gap: 70rem;
-background-color: rgb(42, 42, 45);
+/* background-color: rgb(42, 42, 45); */
 color: white;
 position: fixed;
 
@@ -82,6 +82,7 @@ position: fixed;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-top: 15rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -90,6 +91,7 @@ position: fixed;
     width: 35rem;
     height: 40rem;
     margin: 7rem;
+    margin-top: 10rem;
 }
 
 #big{
@@ -113,8 +115,10 @@ position: fixed;
     
 }
 #contentimage:hover{
-    transform: scale(1.01);
-   
+    transform: ba;
+    z-index: none;
+    height: 30.4rem;
+    width: 33.4rem;
     cursor: pointer;
 }
 
