@@ -16,9 +16,10 @@
   backdrop-filter: blur(8px);
  display: flex;
  flex-direction: row;
+ align-items: center;
+justify-content: space-evenly;
 border-bottom: 2px solid gray;
-align-items: center;
-justify-content: center;
+
 /* gap: 70rem; */
 /* background-color: rgb(42, 42, 45); */
 color: white;
@@ -36,7 +37,7 @@ position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 130px;
+    width: max-content;
     gap: 50px;
     margin-right: 20px;
 }
@@ -153,4 +154,20 @@ position: fixed;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     background-color: rgb(42, 42, 45);
+}
+
+
+#tabs{
+    text-decoration: none;
+    font-size: x-large;
+    color: rgb(227, 221, 209);
+    font-weight: bolder;
+    font-family:  sans-serif;
+    transition: all ease-in-out;
+}
+
+#tabs:hover{
+    scale: calc(2px);
+    
+    color: rgb(173, 173, 252);
 }
