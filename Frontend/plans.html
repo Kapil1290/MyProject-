@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make your Plans</title>
+    <!-- <link rel="stylesheet" href="contact.css"> -->
 </head>
-<body>
-    <h1>From plans</h1>
+<body background="black">
+   
+        <div class="container" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div>
+                <p style="color: blue; font-size: 40px; font-weight: bolder;">Create the Travel Plans</p>
+            </div>
+
+            <div style="border-radius: 10px; display: flex; flex-direction: column; width: 350px; padding: 10px; gap: 20px; padding-top: 40px; height: 25rem; border: 2px solid black;">
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <label style="font-weight: bolder; font-size: x-large;" for="budget">Budget</label>
+                    <input id="budget" type="number" placeholder="Enter Your Budget">
+                </div>
+                <div style="font-weight: bolder;  font-size: x-large; display: flex; flex-direction: row; justify-content: space-between;">
+                    <label for="">Member</label>
+                    <input id="member" type="number" placeholder="Enter Members Count">
+                </div>
+                <div style="font-weight: bolder; font-size: x-large; display: flex; flex-direction: row; justify-content: space-between;">
+                    <label for="">City</label>
+                    <input id="city" type="text" placeholder="Enter City">
+                </div>
+                <div  id="error"></div>
+                <button id="btn" style="background-color: blue; height: 40px; border-radius: 20px; border: none; font-size: larger; color: white;" >Generate</button>
+
+                <div class="res">
+
+                </div>
+            </div>
+        </div>
+   
+
+
+<script>
+    let btn = document.getElementById("btn")
+    let res = document.querySelector(".res");
+    let inpBudget = document.querySelector("#budget")
+    let inpMem = document.querySelector("#member")
+    let inpcity = document.querySelector("#city")
+    let msg = document.querySelector('#error');
+    
+    btn.addEventListener('click', ()=>{
+        if(inpBudget.value === '' || inpMem.value == '' || inpcity.value === ''){
+            let p = document.createElement("p")
+            p.innerText = 'Something missing or not given!!!!!!!'
+            msg.appendChild(p)
+        }else{
+            let resbox = document.createElement("div")
+            resbox.innerText = 'this is the plan for your itineries'
+            res.appendChild(resbox)
+        }
+        setTimeout(() => {
+        msg.remove()
+    }, 2000);
+        
+    })
+
+    
+    
+</script>
 </body>
 </html>
